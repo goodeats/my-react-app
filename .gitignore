@@ -24,4 +24,3 @@ yarn-error.log*
 .jshintrc
 
 src/**/*.css
-src/*.css
