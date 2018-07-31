@@ -5,6 +5,18 @@ import DangerButton from './DangerButton';
 import './App.css';
 
 class App extends Component {
+  handleClick = () => {
+    import('./moduleA')
+      .then(({ moduleA }) => {
+        // Use moduleA
+        console.log(moduleA);
+      })
+      .catch(err => {
+        // Handle failure
+        console.log('error after clicked!');
+      });
+  };
+
   // getGreeting(){
   //   return 'Welcome to React, Yo!';
   // }
@@ -37,6 +49,7 @@ class App extends Component {
         </p>
         <Button />
         <DangerButton />
+        <button onClick={this.handleClick}>Load moduleA</button>
       </div>
     );
   }
