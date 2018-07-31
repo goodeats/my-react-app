@@ -22,3 +22,6 @@ yarn-error.log*
 
 .eslintrc
 .jshintrc
+
+src/**/*.css
+src/*.css
