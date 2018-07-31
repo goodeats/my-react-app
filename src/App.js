@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
+import Button from './Button';
+import DangerButton from './DangerButton';
 import './App.css';
 
 class App extends Component {
@@ -21,8 +23,7 @@ class App extends Component {
 
   // // JavaScript ES6 arrow function without body and implicit return
   // const getGreeting = () =>
-  getGreeting = () =>
-    'Welcome to JavaScript';
+  getGreeting = () => 'Welcome to JavaScript, Pat!';
 
   render() {
     return (
@@ -34,6 +35,8 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
+        <Button />
+        <DangerButton />
       </div>
     );
   }
