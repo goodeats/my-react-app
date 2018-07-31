@@ -4,7 +4,11 @@ import './styles/Button.css';
 class Button extends Component {
   render() {
     // return <button>I'm a button</button>;
-    return <div className="Button" />;
+    return (
+      <div className="Button-div">
+        <div className="Button" />
+      </div>
+    );
   }
 }
 
