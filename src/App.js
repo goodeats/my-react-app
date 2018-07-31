@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
+import { Navbar, Jumbotron, Button } from 'react-bootstrap';
 import logo from './logo.svg';
-import Button from './Button';
+import ReactButton from './Button';
 import DangerButton from './DangerButton';
 import './App.css';
 
@@ -47,9 +48,11 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
-        <Button />
+        <ReactButton />
         <DangerButton />
-        <button onClick={this.handleClick}>Load moduleA</button>
+        <button onClick={this.handleClick} className="btn btn-primary">
+          Load moduleA
+        </button>
       </div>
     );
   }
