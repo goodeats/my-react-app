@@ -1,3 +1,4 @@
+// @flow
 import React, { Component } from 'react';
 import { Navbar, Jumbotron, Button } from 'react-bootstrap';
 import logo from './logo.svg';
@@ -5,7 +6,10 @@ import ReactButton from './Button';
 import DangerButton from './DangerButton';
 import './App.css';
 
-class App extends Component {
+// https://stephenmann.io/post/how-to-setup-flow-with-create-react-app-and-visual-studio-code/
+type Props = {};
+
+class App extends Component<Props> {
   handleClick = () => {
     import('./moduleA')
       .then(({ moduleA }) => {
