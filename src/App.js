@@ -1,6 +1,6 @@
 // @flow
 import React, { Component } from 'react';
-import { Navbar, Jumbotron, Button } from 'react-bootstrap';
+// import { Navbar, Jumbotron, Button } from 'react-bootstrap';
 import logo from './logo.svg';
 import ReactButton from './Button';
 import DangerButton from './DangerButton';
