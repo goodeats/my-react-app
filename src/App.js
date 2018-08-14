@@ -43,6 +43,7 @@ class App extends Component<Props> {
   getGreeting = () => 'Welcome to JavaScript, Pat!';
 
   render() {
+    console.log(process.env.REACT_APP_YO);
     return (
       <div className="App">
         <header className="App-header">
